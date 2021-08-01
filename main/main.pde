@@ -28,7 +28,7 @@ void setup() {
   box3.resize(200, 200);
   box4.resize(200, 200);
   for(int i = 0; i < gomi.length; i++) {
-    gomi[i] = loadImage(i+1 + ".jpg");
+    gomi[i] = loadImage(i+1 + ".png");
     gomi[i].resize(100,100);
   }
   for(int i = 0; i < trush.length; i++) {
