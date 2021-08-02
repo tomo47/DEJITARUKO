@@ -3,25 +3,26 @@ class Screen {
   int y = height/2;
   int stepX = -1;
   int stepY = 1;
+  String[] msg = {"わからなかったら\nパパとママにきいてみよう","あとちょっとでクリアだ",
+                    "こんどはクリアできるかな？"};
+  int rand = int(random(0,msg.length));
   void start_scene() {
     background(150, 200, 150);
     fill(0);
     textSize(80);
     text("ゴミをすててみよう！",x-100,y);
+    textSize(30);
+    text("クリックしてはじめよう",x,y+200);
   }
   void over_scene() {
     background(100,200,255);
     
-    String[] msg = {"わからなかったらパパとママにきいてみよう","またやってみよう",
-                    ""};
-    int rand = int(random(msg.length));
-    
     fill(#FFFFFF);
     textSize(80);
-    text(msg[rand],x+30,y);
+    text(msg[rand],x-70,y);
     fill(0);
     textSize(50);
-    text("またやってみてね！",x+30,y+70);
+    text("またやってみてね！",x+30,70);
   }
   void clear_scene() {
     fill(255);

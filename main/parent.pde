@@ -12,7 +12,7 @@ class Parent {
 
   void display(int ir) {
     anger = ir;
-    if(0 <= anger && anger < 30) { 
+    if(0 <= anger && anger < 20) { 
       image(img3, px, py, pLen, pLen);
       fill(255);
       rect(gx+200, gy, gLen, 30);
@@ -21,7 +21,7 @@ class Parent {
       fill(0);
       textSize(50);
       text("えらい！", textX, textY);
-    }else if(anger < 50) {
+    }else if(anger < 40) {
       image(img2, px, py, pLen, pLen);
       fill(255);
       rect(gx+200, gy, gLen, 30);
